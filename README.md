@@ -12,7 +12,7 @@ Para criar o teste da rota de DELETE, teríamos alguns problemas, pois, para uti
 ![código k6](./assets/K6_delete_code.png)
 
 
-## k6
+## Tecnologia e conceitos aprendidos
 É uma ferramenta para testes de carga e desempenho, principalmente para analisar comportamentos de APIs, sua utilização é simples e fácil de ser implementada nos projetos, possui uma estrutura de : 
 
 Script dos testes - definir quais rotas e o que será testado efetivamente
@@ -27,3 +27,7 @@ Resultados - Durante a execução do teste, são coletadas diversas informaçõe
 
 
 ![K6 Resultado](./assets/k6_delete_result.png)
+
+O teste foi executado localmente, e como resultado, podemos observar que todos os checks (verificações) passaram com sucesso, com 1412 checks realizados e nenhum falhou. Isso indica que todas as respostas esperadas dos testes (como status HTTP 201 e 200) foram recebidas corretamente.
+O tempo médio de resposta das requisições foi 63.82 ms, o que é considerado rápido, porém, é importante resaltar que o backend está sendo executado localmente, sendo que o ideal seria testar em algum servidor, também foi observado que não houveram falhas nas requisições.
+
